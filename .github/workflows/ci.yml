@@ -1,0 +1,25 @@
+name: tests
+on: [push, pull_request]
+jobs:
+  python:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: pip install numpy matplotlib pytest
+      - run: python -m pytest -q
+  matlab:
+    # MATLAB on GitHub-hosted runners needs no licence for public repositories only,
+    # so this job runs once the repository is made public.
+    if: ${{ !github.event.repository.private }}
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: matlab-actions/setup-matlab@v2
+        with:
+          release: R2021a
+      - uses: matlab-actions/run-tests@v2
+        with:
+          select-by-folder: matlab/tests
