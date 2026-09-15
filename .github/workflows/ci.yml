@@ -12,14 +12,19 @@ jobs:
       - run: python -m pytest -q
   matlab:
     # MATLAB on GitHub-hosted runners needs no licence for public repositories only,
-    # so this job runs once the repository is made public.
+    # so this job runs once the repository is made public. This matrix and image
+    # passed 7/7 on 2026-09-16 (R2021a and R2026a).
     if: ${{ !github.event.repository.private }}
-    runs-on: ubuntu-latest
+    strategy:
+      fail-fast: false
+      matrix:
+        release: [R2021a, latest]
+    runs-on: ubuntu-22.04
     steps:
       - uses: actions/checkout@v4
       - uses: matlab-actions/setup-matlab@v2
         with:
-          release: R2021a
+          release: ${{ matrix.release }}
       - uses: matlab-actions/run-tests@v2
         with:
           select-by-folder: matlab/tests

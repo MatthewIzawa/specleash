@@ -11,4 +11,6 @@ range. Example, with his convention P = asteroid and Q = meteorite:
     d = specleash_compare('A17274.txt', 'A17274MM38.txt', [0.70 2.45], 'Plot', true)
 
 Tests: `runtests('matlab/tests')` from the repository root.
-Written for R2021a or later. Not yet run on MATLAB as of the first commit; see CI.
+Written for R2021a or later. The 7 tests pass on MATLAB R2021a and R2026a
+(GitHub-hosted runners, Ubuntu 22.04, checked 2026-09-16), including agreement
+with the distances the Python package computes for the shared fixtures.
