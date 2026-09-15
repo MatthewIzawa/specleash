@@ -1,0 +1,49 @@
+{
+ "pairs": [
+  {
+   "p": "fixture_a.csv",
+   "q": "fixture_b.csv",
+   "distance": 0.05038135345415802
+  },
+  {
+   "p": "fixture_b.csv",
+   "q": "fixture_c.csv",
+   "distance": 0.04395861375
+  }
+ ],
+ "comparisons": [
+  {
+   "a": "fixture_a.csv",
+   "b": "fixture_b.csv",
+   "wl_range": [
+    0.7,
+    2.45
+   ],
+   "normalise_at": 1.5,
+   "x_scale": 1.0,
+   "distance": 0.08127022105186917
+  },
+  {
+   "a": "fixture_a.csv",
+   "b": "fixture_c.csv",
+   "wl_range": [
+    0.5,
+    2.4
+   ],
+   "normalise_at": null,
+   "x_scale": "unit",
+   "distance": 0.048002970995992364
+  },
+  {
+   "a": "fixture_b.csv",
+   "b": "fixture_c.csv",
+   "wl_range": [
+    0.6,
+    2.3
+   ],
+   "normalise_at": 0.55,
+   "x_scale": 2.0,
+   "distance": 0.6438111019535961
+  }
+ ]
+}
