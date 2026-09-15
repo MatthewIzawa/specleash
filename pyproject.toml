@@ -1,0 +1,29 @@
+[build-system]
+requires = ["setuptools>=64"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "specleash"
+version = "0.1.0.dev0"
+description = "Discrete Fréchet distance for comparing the shapes of featureless reflectance spectra"
+readme = "README.md"
+license = {text = "MIT"}
+requires-python = ">=3.10"
+authors = [
+  {name = "Gordon M. Gartrelle"},
+  {name = "Matthew R. M. Izawa", email = "matthew.izawa@gmail.com"},
+  {name = "Daniel M. Applin"},
+  {name = "Edward A. Cloutis"},
+]
+dependencies = ["numpy>=1.23"]
+
+[project.optional-dependencies]
+plot = ["matplotlib>=3.6"]
+test = ["pytest>=7", "matplotlib>=3.6"]
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+pythonpath = ["src"]
+testpaths = ["tests"]

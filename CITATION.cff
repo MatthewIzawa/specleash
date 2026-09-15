@@ -1,0 +1,20 @@
+cff-version: 1.2.0
+message: "If you use this software, please cite it as below."
+title: "specleash: discrete Fréchet distance for featureless reflectance spectra"
+version: 0.1.0.dev0
+license: MIT
+authors:
+  - family-names: Gartrelle
+    given-names: Gordon M.
+    affiliation: Mariner Space Institute
+  - family-names: Izawa
+    given-names: Matthew R. M.
+    affiliation: Institute for Planetary Materials, Okayama University
+    orcid: "https://orcid.org/0000-0001-5456-2912"
+  - family-names: Applin
+    given-names: Daniel M.
+    affiliation: University of Winnipeg
+  - family-names: Cloutis
+    given-names: Edward A.
+    affiliation: University of Winnipeg
+    orcid: "https://orcid.org/0000-0001-7301-0929"
