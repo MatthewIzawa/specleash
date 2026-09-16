@@ -25,6 +25,7 @@ the sampling. A comparison over a range that either spectrum does not cover is
 refused.
 
 The method follows Gartrelle et al. (2021, Icarus 361, 114349). A MATLAB version
-is in `matlab/`.
+is in `matlab/`. `examples/` holds the polynomial fit to the spectrum of
+(17274) 2000 LC16 that Gartrelle et al. (2021) compared with Tagish Lake spectra.
 
 Tests: `python -m pytest`
