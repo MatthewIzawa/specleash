@@ -4,7 +4,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "specleash"
-version = "0.1.0.dev0"
+version = "0.1.0"
 description = "Discrete Fréchet distance for comparing the shapes of featureless reflectance spectra"
 readme = "README.md"
 license = {text = "MIT"}

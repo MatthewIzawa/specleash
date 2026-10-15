@@ -1,8 +1,10 @@
 cff-version: 1.2.0
 message: "If you use this software, please cite it as below."
 title: "specleash: discrete Fréchet distance for featureless reflectance spectra"
-version: 0.1.0.dev0
+version: 0.1.0
+date-released: 2026-10-16
 license: MIT
+repository-code: "https://github.com/MatthewIzawa/specleash"
 authors:
   - family-names: Gartrelle
     given-names: Gordon M.
